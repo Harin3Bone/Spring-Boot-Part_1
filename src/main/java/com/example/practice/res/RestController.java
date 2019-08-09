@@ -11,6 +11,7 @@ public class RestController {
     // Injection for properties
     @Value("${hero.name}")
     private String heroName;
+//    private int heroName;
 
     @Value("${team.name}")
     private String teamName;
