@@ -15,9 +15,12 @@ public class RestController {
     @Value("${team.name}")
     private String teamName;
 
+    @Value("${rank.number}")
+    private int rankNumber;
+
     @GetMapping("/teaminfo")
     public String getTeamInfo(){
-        return "Hero : "+heroName+"\nTeam : "+teamName;
+        return "Hero : "+heroName+"\nTeam : "+teamName+"\nRank : "+rankNumber;
     }
 
     // Request Mapping annotation
